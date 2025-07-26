@@ -1,1 +1,1 @@
-# Soundness-Testnet-Guidee
+# Soundness-Testnet-Guide
