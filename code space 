@@ -1,0 +1,66 @@
+Here’s a ready-made devcontainer.json for your Codespace that comes with Rust (rustc, Cargo), Node.js, and Docker so you don’t have to reinstall tools every time.
+
+
+---
+
+Steps:
+
+1. Inside your repo, create the folder:
+
+
+
+mkdir -p .devcontainer
+
+2. Create the file .devcontainer/devcontainer.json with this content:
+
+
+
+{
+  "name": "Rust + Node + Docker Dev",
+  "image": "mcr.microsoft.com/devcontainers/rust:latest",
+
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "rust-lang.rust-analyzer",
+        "ms-azuretools.vscode-docker",
+        "ms-vscode.cpptools",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  },
+
+  "remoteUser": "vscode",
+
+  "postCreateCommand": "rustc --version && cargo --version && node --version && npm --version",
+
+  "mounts": [
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+  ]
+}
+
+3. Commit and push:
+
+
+
+git add .devcontainer
+git commit -m "Add full Rust + Node + Docker devcontainer"
+git push
+
+4. Close your Codespace and reopen it. It will now:
+
+Preinstall Rust, Cargo, Node.js, and Docker tools
+
+Auto-load Rust each session (no source $HOME/.cargo/env)
+
+Be ready to run containers inside your Codespace.
+
