@@ -55,7 +55,8 @@ WORKDIR /workspace
 {
   "name": "Soundness Dev Environment",
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "context": ".."
   },
   "customizations": {
     "vscode": {
@@ -70,7 +71,6 @@ WORKDIR /workspace
   "postCreateCommand": "rustc --version && cargo --version && soundnessup update",
   "workspaceFolder": "/workspace"
 }
-
 
 ---
 
