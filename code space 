@@ -1,22 +1,9 @@
-Here’s a ready-made devcontainer.json for your Codespace that comes with Rust (rustc, Cargo), Node.js, and Docker so you don’t have to reinstall tools every time.
+Got it — you want me to add soundnessup so it’s automatically installed and ready every time your Codespace starts, on top of the Rust + Node + Docker setup.
 
-
----
-
-Steps:
-
-1. Inside your repo, create the folder:
-
-
-
-mkdir -p .devcontainer
-
-2. Create the file .devcontainer/devcontainer.json with this content:
-
-
+Here’s the updated devcontainer.json you can use:
 
 {
-  "name": "Rust + Node + Docker Dev",
+  "name": "Rust + Node + Docker + Soundness Dev",
   "image": "mcr.microsoft.com/devcontainers/rust:latest",
 
   "features": {
@@ -41,26 +28,47 @@ mkdir -p .devcontainer
 
   "remoteUser": "vscode",
 
-  "postCreateCommand": "rustc --version && cargo --version && node --version && npm --version",
+  "postCreateCommand": "curl -sSL https://raw.githubusercontent.com/soundnesslabs/soundness-layer/main/soundnessup/install | bash && source ~/.bashrc && soundnessup install && soundnessup update && rustc --version && cargo --version && node --version && npm --version",
 
   "mounts": [
     "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
   ]
 }
 
-3. Commit and push:
+
+---
+
+How to set it up
+
+1. In your repo:
+
+
+
+mkdir -p .devcontainer
+nano .devcontainer/devcontainer.json
+
+2. Paste the file above and save.
+
+
+3. Commit:
 
 
 
 git add .devcontainer
-git commit -m "Add full Rust + Node + Docker devcontainer"
+git commit -m "Add Rust + Node + Docker + Soundness devcontainer"
 git push
 
-4. Close your Codespace and reopen it. It will now:
+4. Close and reopen your Codespace.
+It will now:
 
-Preinstall Rust, Cargo, Node.js, and Docker tools
 
-Auto-load Rust each session (no source $HOME/.cargo/env)
 
-Be ready to run containers inside your Codespace.
+Preinstall Rust, Cargo, Node.js, Docker
 
+Automatically install and update soundnessup
+
+Load all tools on startup, no manual setup.
+
+
+
+---
