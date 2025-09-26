@@ -84,7 +84,14 @@ Go to discord https://discord.com/channels/1341336526713257984/13526047557126718
 
 
 # Play a Game and Send Your Proof
-Once you have submitted your key and its your group's turn to play, heead to https://discord.com/channels/1341336526713257984/1391039818988916768 it'll look like the photo below, follow the instructions
+To play the game, go to Soundness Discord Server (link at the. end of this page),then go Game-Arena Channel.
+
+Type /8queen
+
+Click the link in the game instructions. It will take you to your browser.
+
+play the game following the How to in the #8queen.txt
+
 <img width="540" height="906" alt="image" src="https://github.com/user-attachments/assets/67f048c8-eb7e-4b42-8528-99faf904a389" />
 
 Once you have won a game, Bot will send you a message, click ``Generate Proof`` Proof will be Generated with your Blob ID included, Copy it, edit ``<your-key-name>`` to the name you used when Generating key pair then submit your proof for verification.
