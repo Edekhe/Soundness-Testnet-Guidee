@@ -1,8 +1,8 @@
-#92 possible answers to the 8queens board game.
+# 90 possible answers to the 8queens board game.
 
 
 Row = the Alphabets represent the rows
-Column = the numbers represent the columns for the placement of the queen 👑 👑 ghjj
+Column = the numbers represent the columns for the placement of the queen
 
 e.g A1 B5 C8 D6 E3 F7 G2 H4
 
