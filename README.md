@@ -83,7 +83,7 @@ Go to discord https://discord.com/channels/1341336526713257984/13526047557126718
 **NOTE:** Only for those with Onboarded role
 
 
-#Open the Game Dashboard, Play the Game and Send Your Proof.
+# Open the Game Dashboard, Play the Game and Send Your Proof.
 
 To play the game, go to Soundness Discord Server (link at the end of this page),then go to Game-Arena Channel.
 
@@ -105,4 +105,4 @@ I'll make a video from beginning to the end on how to use this guide, check out 
 
 # Follow https://x.com/soundnesslabs and https://x.com/danieledekhe for updates
 
-#Don't forget to fork and give a star ⭐
+# Don't forget to fork and give a star ⭐
