@@ -1,6 +1,21 @@
-Row = Letters
-Column = Numbers 
+#92 possible answers to the 8queens game.
 
+
+Row = the Alphabets represent the rows
+Column = the numbers represent the columns for the placement of the queen 👑 👑 ghjj
+
+e.g A1 B5 C8 D6 E3 F7 G2 H4
+
+  1  2  3  4  5  6  7  8
+A 👑
+B.            👑
+C.                     👑
+D.               👑
+E.      👑
+F.                  👑
+G.   👑
+H.         👑
+        
 
 A1 B5 C8 D6 E3 F7 G2 H4
 A1 B6 C8 D3 E7 F4 G2 H5
