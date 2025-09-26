@@ -83,18 +83,17 @@ Go to discord https://discord.com/channels/1341336526713257984/13526047557126718
 **NOTE:** Only for those with Onboarded role
 
 
-# Play a Game and Send Your Proof
-To play the game, go to Soundness Discord Server (link at the. end of this page),then go Game-Arena Channel.
+#Open the Game Dashboard, Play the Game and Send Your Proof.
 
-Type /8queen
+To play the game, go to Soundness Discord Server (link at the end of this page),then go to Game-Arena Channel.
 
-Click the link in the game instructions. It will take you to your browser.
+Type /8queen in the text box and follow the onscreen instructions by clicking on the link in the bot response. It will take you to your browser.
 
-play the game following the How to in the #8queen.txt
+play the game following the How to in the **8queen.txt** file of this repo.
 
 <img width="540" height="906" alt="image" src="https://github.com/user-attachments/assets/67f048c8-eb7e-4b42-8528-99faf904a389" />
 
-Once you have won a game, Bot will send you a message, click ``Generate Proof`` Proof will be Generated with your Blob ID included, Copy it, edit ``<your-key-name>`` to the name you used when Generating key pair then submit your proof for verification.
+Once you have won the game, a ``Proof message will be Generated with your Blob ID included``, Copy it, edit ``<your-key-name>`` to the name you used when Generating key pair then submit your proof for verification via your CLI.
 
 After completing everything the result will be like this
 <img width="1049" height="583" alt="image" src="https://github.com/user-attachments/assets/5910e0e7-e781-43f1-a377-94584d750f5b" />
@@ -105,3 +104,5 @@ That's All
 I'll make a video from beginning to the end on how to use this guide, check out my X(twitter), my dm is open for questions if you are confused
 
 # Follow https://x.com/soundnesslabs and https://x.com/danieledekhe for updates
+
+#Don't forget to fork and give a star ⭐
